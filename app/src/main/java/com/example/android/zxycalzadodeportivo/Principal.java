@@ -6,10 +6,9 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import java.lang.reflect.Array;
-
-import static com.example.android.zxycalzadodeportivo.R.id.txtcotizacion2;
 
 public class Principal extends AppCompatActivity {
     private Spinner sexoCombo;
@@ -25,7 +24,7 @@ public class Principal extends AppCompatActivity {
     private ArrayAdapter marcaAdapter;
 
     private EditText cantidad;
-    private EditText cotizacion;
+    private TextView cotizacion;
     int op1, op2, op3, cant, valor ;
 
 
@@ -50,7 +49,7 @@ public class Principal extends AppCompatActivity {
         marcaCombo.setAdapter(marcaAdapter);
 
         cantidad = (EditText)findViewById(R.id.txtcantidad);
-        cotizacion = (EditText)findViewById(R.id.txtcotizacion);
+        cotizacion = (TextView)findViewById(R.id.txtcotizacion);
     }
 
     public void Precio(View v)
