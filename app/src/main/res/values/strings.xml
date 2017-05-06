@@ -5,4 +5,32 @@
     <string name="marca">Marca:</string>
     <string name="cantidad">Cantidad:</string>
     <string name="cotizacion">Cotizacion</string>
+
+    <string name="mujer">Mujer</string>
+    <string name="hombre">Hombre</string>
+    
+    <string-array name="sexo">
+        <item>@string/mujer</item>
+        <item>@string/hombre</item>
+    </string-array>
+
+    <string name="zapatilla">Zapatilla</string>
+    <string name="clasico">Clasico</string>
+    
+    <string-array name="tipo">
+        <item>@string/zapatilla</item>
+        <item>@string/clasico</item>
+    </string-array>
+
+    <string name="nike">Nike</string>
+    <string name="adida">Adida</string>
+    <string name="puma">Puma</string>
+    
+    <string-array name="marca">
+        <item>@string/nike</item>
+        <item>@string/adida</item>
+        <item>@string/puma</item>
+    </string-array>
+    
+    
 </resources>

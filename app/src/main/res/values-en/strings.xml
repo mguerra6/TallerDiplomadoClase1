@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ZXY sports shoes</string>
+    <string name="cantidad">Quantity:</string>
+    <string name="cotizacion">"Quotation "</string>
+    <string name="marca">Make:</string>
+    <string name="sexo">Footwear for:</string>
+    <string name="tipo">kind:</string>
+    <string name="clasico">Classic</string>
+    <string name="hombre">Man</string>
+    <string name="adida">Adida</string>
+    <string name="mujer">Woman</string>
+    <string name="nike">Nike</string>
+    <string name="puma">Puma</string>
+    <string name="zapatilla">Shoe</string>
+</resources>
