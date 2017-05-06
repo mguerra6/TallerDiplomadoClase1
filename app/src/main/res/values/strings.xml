@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ZXY calzado deportivo</string>
+    <string name="sexo">Calzado para:</string>
+    <string name="tipo">Tipo:</string>
+    <string name="marca">Marca:</string>
+    <string name="cantidad">Cantidad:</string>
+    <string name="cotizacion">Cotizacion</string>
+</resources>
