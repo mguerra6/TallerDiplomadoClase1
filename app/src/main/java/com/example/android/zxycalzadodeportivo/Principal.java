@@ -9,6 +9,8 @@ import android.widget.Spinner;
 
 import java.lang.reflect.Array;
 
+import static com.example.android.zxycalzadodeportivo.R.id.txtcotizacion2;
+
 public class Principal extends AppCompatActivity {
     private Spinner sexoCombo;
     private String [] sexoOpciones;
