@@ -184,6 +184,7 @@ public class Principal extends AppCompatActivity {
                 {
                     cantidad.setError(this.getResources().getString(R.string.error_menor_cero));
                     cantidad.requestFocus();
+                    return false;
                 }
         return true;
     }
