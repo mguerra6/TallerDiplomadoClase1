@@ -31,6 +31,9 @@
         <item>@string/adida</item>
         <item>@string/puma</item>
     </string-array>
+
+    <string name="precio">Precio</string>
+    <string name="Borrar">Borrar</string>
     
     
 </resources>

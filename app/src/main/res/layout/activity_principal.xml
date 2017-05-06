@@ -14,9 +14,9 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true">
+        android:layout_alignParentStart="true">
 
         <TextView
             android:text="@string/sexo"
@@ -58,7 +58,7 @@
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/cmdcantidad" />
+            android:id="@+id/cmdmarca" />
 
         <TextView
             android:text="@string/cantidad"
@@ -76,6 +76,26 @@
             android:ems="10"
             android:id="@+id/txtcantidad" />
 
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="@string/precio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnPrecio"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="@string/Borrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnborrar"
+                android:layout_weight="1" />
+        </LinearLayout>
+
         <TextView
             android:text="@string/cotizacion"
             android:layout_width="match_parent"
@@ -85,11 +105,12 @@
             android:textStyle="normal|bold"
             android:textSize="20sp" />
 
-        <TextView
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/txtcotizacion"
-            android:textAlignment="center"
-            android:textSize="20sp" />
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txtcotizacion" />
+
     </LinearLayout>
 </RelativeLayout>
