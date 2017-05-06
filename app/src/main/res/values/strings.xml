@@ -36,7 +36,7 @@
     <string name="borrar">Borrar</string>
 
     <string name="error_vacio">Falto la cantidad</string>
-    <string name="error_menor_cero">La cantidad no debe ser menor a cero</string>
+    <string name="error_menor_cero">La cantidad no debe ser menor o igual a cero</string>
     
     
 </resources>

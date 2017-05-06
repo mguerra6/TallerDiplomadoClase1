@@ -73,17 +73,17 @@ public class Principal extends AppCompatActivity {
                                                 case 0:
 
                                                     valor = cant * 120000;
-                                                    cotizacion.setText("$1-"+valor);
+                                                    cotizacion.setText("$"+valor);
                                                     break;
                                                 //adidas
                                                 case 1:
                                                     valor = cant * 140000;
-                                                    cotizacion.setText("$2-"+valor);
+                                                    cotizacion.setText("$"+valor);
                                                     break;
                                                 //puma
                                                 case 2:
                                                     valor = cant * 130000;
-                                                    cotizacion.setText("$3-"+valor);
+                                                    cotizacion.setText("$"+valor);
                                                     break;
                                             }
 
@@ -95,17 +95,17 @@ public class Principal extends AppCompatActivity {
                                                 //nike
                                                 case 0:
                                                     valor = cant * 50000;
-                                                    cotizacion.setText("$4-"+valor);
+                                                    cotizacion.setText("$"+valor);
                                                     break;
                                                 //adidas
                                                 case 1:
                                                     valor = cant * 80000;
-                                                    cotizacion.setText("$5-"+valor);
+                                                    cotizacion.setText("$"+valor);
                                                     break;
                                                 //puma
                                                 case 2:
                                                     valor = cant * 100000;
-                                                    cotizacion.setText("$6-"+valor);
+                                                    cotizacion.setText("$"+valor);
                                                     break;
                                             }
                     }
@@ -122,17 +122,17 @@ public class Principal extends AppCompatActivity {
                                                 //nike
                                                 case 0:
                                                     valor = cant * 100000;
-                                                    cotizacion.setText("$7-"+valor);
+                                                    cotizacion.setText("$"+valor);
                                                     break;
                                                 //adidas
                                                 case 1:
                                                     valor = cant * 130000;
-                                                    cotizacion.setText("$8-"+valor);
+                                                    cotizacion.setText("$"+valor);
                                                     break;
                                                 //puma
                                                 case 2:
                                                     valor = cant * 110000;
-                                                    cotizacion.setText("$9-"+valor);
+                                                    cotizacion.setText("$"+valor);
                                                     break;
                                             }
 
@@ -144,17 +144,17 @@ public class Principal extends AppCompatActivity {
                                                 //nike
                                                 case 0:
                                                     valor = cant * 60000;
-                                                    cotizacion.setText("$10-"+valor);
+                                                    cotizacion.setText("$"+valor);
                                                     break;
                                                 //adidas
                                                 case 1:
                                                     valor = cant * 70000;
-                                                    cotizacion.setText("$11-"+valor);
+                                                    cotizacion.setText("$"+valor);
                                                     break;
                                                 //puma
                                                 case 2:
                                                     valor = cant * 120000;
-                                                    cotizacion.setText("$12-"+valor);
+                                                    cotizacion.setText("$"+valor);
                                                     break;
                                             }
                     }
@@ -178,10 +178,11 @@ public class Principal extends AppCompatActivity {
     {
         if(cantidad.getText().toString().isEmpty())
         {
-            cantidad.setError(this.getResources().getString(R.string.error_vacio));
+            cantidad.setError(this.getResources().getString(R.string.error_menor_cero));
             cantidad.requestFocus();
             return false;
-        }else if(cant <= 0)
+        }
+            else if(cant <= 0)
                 {
                     cantidad.setError(this.getResources().getString(R.string.error_menor_cero));
                     cantidad.requestFocus();

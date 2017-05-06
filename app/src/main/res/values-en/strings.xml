@@ -15,6 +15,6 @@
     <string name="zapatilla">Shoe</string>
     <string name="precio">Price</string>
     <string name="error_vacio">I miss the amount</string>
-    <string name="error_menor_cero">The amount must not be less than zero</string>
+    <string name="error_menor_cero">The amount must not be less than or equal to zero</string>
     <string name="borrar">Delete</string>
 </resources>
