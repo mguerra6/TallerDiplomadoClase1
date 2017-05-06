@@ -24,6 +24,8 @@ public class Principal extends AppCompatActivity {
 
     private EditText cantidad;
     private EditText cotizacion;
+    int op1, op2;
+    int op3, cant, valor ;
 
 
     @Override
@@ -52,26 +54,57 @@ public class Principal extends AppCompatActivity {
 
     public void Calcular(View v)
     {
-        int op;
-        double n1, n2, res = 0;
+
         if(validar())
         {
-            n1 = Double.parseDouble(cajanumero1.getText().toString());
-            n2 = Double.parseDouble(cajanumero2.getText().toString());
-            op = comboOpciones.getSelectedItemPosition();
-            switch (op){
+            n = Integer.parseInt(cantidad.getText().toString());
+            op1 = sexoCombo.getSelectedItemPosition();
+            switch (op1){
+                //hombre
                 case 0:
-                    res = n1 + n2;
+                    op2 = tipoCombo.getSelectedItemPosition();
+                    switch (op2){
+                        //zapatilla
+                        case 0:
+                            switch (op3){
+                                //nike
+                                case 0:
+                                    valor = cant * 120000;
+                                    break;
+                                //adidas
+                                case 1:
+                                    valor = cant * 140000;
+                                    break;
+                                //puma
+                                case 2:
+                                    valor = cant * 130000;
+                                    break;
+                            }
+
+                            break;
+                        //clasico
+                        case 1:
+                            switch (op3){
+                                //nike
+                                case 0:
+                                    valor = cant * 50000;
+                                    break;
+                                //adidas
+                                case 1:
+                                    valor = cant * 80000;
+                                    break;
+                                //puma
+                                case 2:
+                                    valor = cant * 100000;
+                                    break;
+                            }
+                    }
                     break;
+
+                //mujer
                 case 1:
-                    res = n1 - n2;
-                    break;
-                case 2:
-                    res = n1 * n2;
-                    break;
-                case 3:
-                    res = n1 / n2;
-                    break;
+
+
             }
             cotizacion.setText(""+precio);
             cantidad.requestFocus();
