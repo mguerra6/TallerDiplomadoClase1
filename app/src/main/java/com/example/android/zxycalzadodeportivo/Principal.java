@@ -24,8 +24,7 @@ public class Principal extends AppCompatActivity {
 
     private EditText cantidad;
     private EditText cotizacion;
-    int op1, op2;
-    int op3, cant, valor ;
+    int op1, op2, op3, cant, valor ;
 
 
     @Override
@@ -67,36 +66,45 @@ public class Principal extends AppCompatActivity {
                     switch (op2){
                         //zapatilla
                         case 0:
+                                            op3 = marcaCombo.getSelectedItemPosition();
                                             switch (op3){
                                                 //nike
                                                 case 0:
+
                                                     valor = cant * 120000;
+                                                    cotizacion.setText("$1-"+valor);
                                                     break;
                                                 //adidas
                                                 case 1:
                                                     valor = cant * 140000;
+                                                    cotizacion.setText("$2-"+valor);
                                                     break;
                                                 //puma
                                                 case 2:
                                                     valor = cant * 130000;
+                                                    cotizacion.setText("$3-"+valor);
                                                     break;
                                             }
 
                                             break;
                         //clasico
                         case 1:
+                                            op3 = marcaCombo.getSelectedItemPosition();
                                             switch (op3){
                                                 //nike
                                                 case 0:
                                                     valor = cant * 50000;
+                                                    cotizacion.setText("$4-"+valor);
                                                     break;
                                                 //adidas
                                                 case 1:
                                                     valor = cant * 80000;
+                                                    cotizacion.setText("$5-"+valor);
                                                     break;
                                                 //puma
                                                 case 2:
                                                     valor = cant * 100000;
+                                                    cotizacion.setText("$6-"+valor);
                                                     break;
                                             }
                     }
@@ -108,36 +116,44 @@ public class Principal extends AppCompatActivity {
                     switch (op2){
                         //zapatilla
                         case 0:
+                                            op3 = marcaCombo.getSelectedItemPosition();
                                             switch (op3){
                                                 //nike
                                                 case 0:
                                                     valor = cant * 100000;
+                                                    cotizacion.setText("$7-"+valor);
                                                     break;
                                                 //adidas
                                                 case 1:
                                                     valor = cant * 130000;
+                                                    cotizacion.setText("$8-"+valor);
                                                     break;
                                                 //puma
                                                 case 2:
                                                     valor = cant * 110000;
+                                                    cotizacion.setText("$9-"+valor);
                                                     break;
                                             }
 
                                             break;
                         //clasico
                         case 1:
+                                            op3 = marcaCombo.getSelectedItemPosition();
                                             switch (op3){
                                                 //nike
                                                 case 0:
                                                     valor = cant * 60000;
+                                                    cotizacion.setText("$10-"+valor);
                                                     break;
                                                 //adidas
                                                 case 1:
                                                     valor = cant * 70000;
+                                                    cotizacion.setText("$11-"+valor);
                                                     break;
                                                 //puma
                                                 case 2:
                                                     valor = cant * 120000;
+                                                    cotizacion.setText("$12-"+valor);
                                                     break;
                                             }
                     }
@@ -145,7 +161,6 @@ public class Principal extends AppCompatActivity {
 
 
             }
-            cotizacion.setText("$"+valor);
             cantidad.requestFocus();
         }
 
