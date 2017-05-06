@@ -33,7 +33,10 @@
     </string-array>
 
     <string name="precio">Precio</string>
-    <string name="Borrar">Borrar</string>
+    <string name="borrar">Borrar</string>
+
+    <string name="error_vacio">Falto la cantidad</string>
+    <string name="error_menor_cero">La cantidad no debe ser menor a cero</string>
     
     
 </resources>
