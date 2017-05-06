@@ -52,12 +52,13 @@ public class Principal extends AppCompatActivity {
         cotizacion = (EditText)findViewById(R.id.txtcotizacion);
     }
 
-    public void Calcular(View v)
+    public void Precio(View v)
     {
-
+        cotizacion.setText("");
+        cant = Integer.parseInt(cantidad.getText().toString());
         if(validar())
         {
-            n = Integer.parseInt(cantidad.getText().toString());
+
             op1 = sexoCombo.getSelectedItemPosition();
             switch (op1){
                 //hombre
@@ -66,50 +67,95 @@ public class Principal extends AppCompatActivity {
                     switch (op2){
                         //zapatilla
                         case 0:
-                            switch (op3){
-                                //nike
-                                case 0:
-                                    valor = cant * 120000;
-                                    break;
-                                //adidas
-                                case 1:
-                                    valor = cant * 140000;
-                                    break;
-                                //puma
-                                case 2:
-                                    valor = cant * 130000;
-                                    break;
-                            }
+                                            switch (op3){
+                                                //nike
+                                                case 0:
+                                                    valor = cant * 120000;
+                                                    break;
+                                                //adidas
+                                                case 1:
+                                                    valor = cant * 140000;
+                                                    break;
+                                                //puma
+                                                case 2:
+                                                    valor = cant * 130000;
+                                                    break;
+                                            }
 
-                            break;
+                                            break;
                         //clasico
                         case 1:
-                            switch (op3){
-                                //nike
-                                case 0:
-                                    valor = cant * 50000;
-                                    break;
-                                //adidas
-                                case 1:
-                                    valor = cant * 80000;
-                                    break;
-                                //puma
-                                case 2:
-                                    valor = cant * 100000;
-                                    break;
-                            }
+                                            switch (op3){
+                                                //nike
+                                                case 0:
+                                                    valor = cant * 50000;
+                                                    break;
+                                                //adidas
+                                                case 1:
+                                                    valor = cant * 80000;
+                                                    break;
+                                                //puma
+                                                case 2:
+                                                    valor = cant * 100000;
+                                                    break;
+                                            }
                     }
                     break;
 
                 //mujer
                 case 1:
+                    op2 = tipoCombo.getSelectedItemPosition();
+                    switch (op2){
+                        //zapatilla
+                        case 0:
+                                            switch (op3){
+                                                //nike
+                                                case 0:
+                                                    valor = cant * 100000;
+                                                    break;
+                                                //adidas
+                                                case 1:
+                                                    valor = cant * 130000;
+                                                    break;
+                                                //puma
+                                                case 2:
+                                                    valor = cant * 110000;
+                                                    break;
+                                            }
+
+                                            break;
+                        //clasico
+                        case 1:
+                                            switch (op3){
+                                                //nike
+                                                case 0:
+                                                    valor = cant * 60000;
+                                                    break;
+                                                //adidas
+                                                case 1:
+                                                    valor = cant * 70000;
+                                                    break;
+                                                //puma
+                                                case 2:
+                                                    valor = cant * 120000;
+                                                    break;
+                                            }
+                    }
+                    break;
 
 
             }
-            cotizacion.setText(""+precio);
+            cotizacion.setText("$"+valor);
             cantidad.requestFocus();
         }
 
+    }
+
+    public void Borrar(View v)
+    {
+        cantidad.setText("");
+        cotizacion.setText("");
+        cantidad.requestFocus();
     }
 
     public boolean validar()
@@ -119,7 +165,7 @@ public class Principal extends AppCompatActivity {
             cantidad.setError(this.getResources().getString(R.string.error_vacio));
             cantidad.requestFocus();
             return false;
-        }else if(cantidad.getText().toString() <= 0)
+        }else if(cant <= 0)
                 {
                     cantidad.setError(this.getResources().getString(R.string.error_menor_cero));
                     cantidad.requestFocus();

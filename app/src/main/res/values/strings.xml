@@ -10,8 +10,8 @@
     <string name="hombre">Hombre</string>
     
     <string-array name="sexo">
-        <item>@string/mujer</item>
         <item>@string/hombre</item>
+        <item>@string/mujer</item>
     </string-array>
 
     <string name="zapatilla">Zapatilla</string>
